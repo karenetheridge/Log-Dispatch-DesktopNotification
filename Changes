@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+          - fix prereqs used when installed non-interactively (RT#84753)
 
 0.01      2009-02-07 02:52:53Z
           - Initial release.
