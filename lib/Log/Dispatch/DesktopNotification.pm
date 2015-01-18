@@ -32,12 +32,12 @@ sub new {
 
 =head2 output_class
 
-Returns the name of a Log::Dispatch::Output class that's suitable to
+Returns the name of a Log::Dispatch::Output class that is suitable to
 graphically notify a user on the current system.
 
-On MacOS X that'll be Log::Dispatch::MacGrowl. On other systems
-Log::Dispatch::Gtk2::Notify will be returned if it's available and usable.
-Otherwise Log::Dispatch::Null will be returned.
+On MacOS X, that will be Log::Dispatch::MacGrowl. On other systems,
+Log::Dispatch::Gtk2::Notify will be returned if it is available and usable.
+Otherwise, Log::Dispatch::Null will be returned.
 
 =cut
 
