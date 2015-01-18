@@ -19,7 +19,7 @@ use namespace::clean;
 
 =head2 new
 
-Creates a new Log::Dispatch output that can be used to graphically notify a
+Creates a new L<Log::Dispatch> output that can be used to graphically notify a
 user on this system. Uses C<output_class> and calls C<new> on the returned
 class, passing along all arguments.
 
@@ -32,12 +32,12 @@ sub new {
 
 =head2 output_class
 
-Returns the name of a Log::Dispatch::Output class that is suitable to
+Returns the name of a L<Log::Dispatch::Output> class that is suitable to
 graphically notify a user on the current system.
 
-On MacOS X, that will be Log::Dispatch::MacGrowl. On other systems,
-Log::Dispatch::Gtk2::Notify will be returned if it is available and usable.
-Otherwise, Log::Dispatch::Null will be returned.
+On MacOS X, that will be L<Log::Dispatch::MacGrowl>. On other systems,
+L<Log::Dispatch::Gtk2::Notify> will be returned if it is available and usable.
+Otherwise, L<Log::Dispatch::Null> will be returned.
 
 =cut
 
@@ -63,8 +63,11 @@ available (most *N*Xes).
 
 =head1 SEE ALSO
 
-L<Log::Dispatch>, L<Log::Dispatch::Gtk2::Notify>, L<Log::Dispatch::MacGrowl>,
-L<Log::Dispatch::Null>
+=for :list
+* L<Log::Dispatch>
+* L<Log::Dispatch::Gtk2::Notify>
+* L<Log::Dispatch::MacGrowl>
+* L<Log::Dispatch::Null>
 
 =cut
 
