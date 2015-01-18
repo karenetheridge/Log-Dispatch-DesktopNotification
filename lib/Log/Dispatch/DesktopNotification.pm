@@ -1,17 +1,11 @@
 use strict;
 use warnings;
-
 package Log::Dispatch::DesktopNotification;
+# ABSTRACT: Send log messages to a desktop notification system
 
 use Module::Load qw/load/;
 use Module::Load::Conditional qw/can_load/;
 use namespace::clean;
-
-our $VERSION = '0.01';
-
-=head1 NAME
-
-Log::Dispatch::DesktopNotification - Send log messages to a desktop notification system
 
 =head1 SYNOPSIS
 
@@ -71,17 +65,6 @@ available (most *N*Xes).
 
 L<Log::Dispatch>, L<Log::Dispatch::Gtk2::Notify>, L<Log::Dispatch::MacGrowl>,
 L<Log::Dispatch::Null>
-
-=head1 AUTHOR
-
-Florian Ragwitz E<lt>rafl@debian.orgE<gt>
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2009 by Florian Ragwitz.
-
-This is free software; you can redistribute it and/or modify it under the same
-terms as perl itself.
 
 =cut
 
