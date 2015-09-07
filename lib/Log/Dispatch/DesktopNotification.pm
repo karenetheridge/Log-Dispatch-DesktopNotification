@@ -3,6 +3,8 @@ use warnings;
 package Log::Dispatch::DesktopNotification;
 # ABSTRACT: Send log messages to a desktop notification system
 
+our $VERSION = '0.03';
+
 use Module::Load qw/load/;
 use Module::Load::Conditional qw/can_load/;
 use namespace::clean;
