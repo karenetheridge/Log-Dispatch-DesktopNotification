@@ -7,7 +7,7 @@ our $VERSION = '0.03';
 
 use Module::Load qw/load/;
 use Module::Load::Conditional qw/can_load/;
-use namespace::clean;
+use namespace::clean 0.19;
 
 =head1 SYNOPSIS
 
