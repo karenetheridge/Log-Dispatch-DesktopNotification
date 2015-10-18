@@ -58,7 +58,7 @@ sub output_class {
     load $mod; return $mod;
 }
 
-=head1 BUGS
+=head1 LIMITATIONS
 
 Currently only supports Mac OS X and systems on which notification-daemon is
 available (most *N*Xes).
