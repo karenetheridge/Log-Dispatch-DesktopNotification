@@ -38,7 +38,7 @@ Returns the name of a L<Log::Dispatch::Output> class that is suitable to
 graphically notify a user on the current system.
 
 On MacOS X, that will be L<Log::Dispatch::MacGrowl>. On other systems,
-L<Log::Dispatch::Gtk2::Notify> will be returned if it is available and usable.
+L<Log::Dispatch::Desktop::Notify> will be returned if it is available and usable.
 Otherwise, L<Log::Dispatch::Null> will be returned.
 
 =cut
@@ -49,12 +49,7 @@ sub output_class {
         load $mod; return $mod;
     }
 
-    if (can_load(modules => { Gtk2 => undef }) && Gtk2->init_check) {
-        my $mod = 'Log::Dispatch::Gtk2::Notify';
-        return $mod if can_load(modules => { $mod => undef });
-    }
-
-    my $mod = 'Log::Dispatch::Null';
+    my $mod = 'Log::Dispatch::Desktop::Notify';
     load $mod; return $mod;
 }
 
@@ -67,7 +62,7 @@ available (most *N*Xes).
 
 =for :list
 * L<Log::Dispatch>
-* L<Log::Dispatch::Gtk2::Notify>
+* L<Log::Dispatch::Desktop::Notify>
 * L<Log::Dispatch::MacGrowl>
 * L<Log::Dispatch::Null>
 
