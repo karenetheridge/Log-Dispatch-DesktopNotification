@@ -1,6 +1,6 @@
 Revision history for Log-Dispatch-DesktopNotification
 
-{{$NEXT}}
+0.03      2017-05-09 22:57:05Z
           - switch from Gtk2::Notify to Desktop::Notify due to reliability
             issues (Christian Garbs, PR#1)
 

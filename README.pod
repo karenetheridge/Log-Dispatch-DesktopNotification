@@ -8,7 +8,7 @@ Log::Dispatch::DesktopNotification - Send log messages to a desktop notification
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -35,7 +35,7 @@ On MacOS X, that will be L<Log::Dispatch::MacGrowl>. On other systems,
 L<Log::Dispatch::Desktop::Notify> will be returned if it is available and usable.
 Otherwise, L<Log::Dispatch::Null> will be returned.
 
-=head1 BUGS
+=head1 LIMITATIONS
 
 Currently only supports Mac OS X and systems on which notification-daemon is
 available (most *N*Xes).
@@ -62,21 +62,36 @@ L<Log::Dispatch::Null>
 
 =back
 
+=head1 SUPPORT
+
+Bugs may be submitted through L<the RT bug tracker|https://rt.cpan.org/Public/Dist/Display.html?Name=Log-Dispatch-DesktopNotification>
+(or L<bug-Log-Dispatch-DesktopNotification@rt.cpan.org|mailto:bug-Log-Dispatch-DesktopNotification@rt.cpan.org>).
+
 =head1 AUTHOR
 
 Florian Ragwitz <rafl@debian.org>
 
-=head1 COPYRIGHT AND LICENSE
+=head1 CONTRIBUTORS
+
+=for stopwords Karen Etheridge Christian Garbs
+
+=over 4
+
+=item *
+
+Karen Etheridge <ether@cpan.org>
+
+=item *
+
+Christian Garbs <mitch@cgarbs.de>
+
+=back
+
+=head1 COPYRIGHT AND LICENCE
 
 This software is copyright (c) 2009 by Florian Ragwitz.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
-
-=head1 CONTRIBUTOR
-
-=for stopwords Karen Etheridge
-
-Karen Etheridge <ether@cpan.org>
 
 =cut
