@@ -1,6 +1,8 @@
 Revision history for Log-Dispatch-DesktopNotification
 
 {{$NEXT}}
+          - switch from Gtk2::Notify to Desktop::Notify due to reliability
+            issues (Christian Garbs, PR#1)
 
 0.02      2015-01-18 23:28:13Z
           - fix prereqs used when installed non-interactively (RT#84753)
